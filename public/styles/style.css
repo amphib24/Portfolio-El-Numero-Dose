@@ -88,10 +88,12 @@ footer{
   border-radius: 150px;
   position: relative;
 }
-textarea{
+#biotext{
   position: relative;
   clear:right;
   float:right;
   overflow: scroll;
   width:60%;
+  height:350px;
+  border: 4px solid #03899c;
 }
