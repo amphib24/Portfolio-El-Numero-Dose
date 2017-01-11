@@ -71,11 +71,27 @@ section{
 }
 #gallery img{
   width: 100%;
+  border: 3px solid #03899c;
   border-radius: 6px;
+
 }
 footer{
   background-color: #03899c;
   height: 60px;
   text-align: center;
   padding-top: 10px;
+}
+
+#selfie{
+  clear:both;
+  float: left;
+  border-radius: 150px;
+  position: relative;
+}
+textarea{
+  position: relative;
+  clear:right;
+  float:right;
+  overflow: scroll;
+  width:60%;
 }
