@@ -1,0 +1,29 @@
+{
+  "name": "portfolio2",
+  "version": "1.0.0",
+  "description": "word",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amphib24/Portfolio-El-Numero-Dose.git"
+  },
+  "keywords": [
+    "nutty",
+    "butty",
+    "butter",
+    "puddy"
+  ],
+  "author": "JEFE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amphib24/Portfolio-El-Numero-Dose/issues"
+  },
+  "homepage": "https://github.com/amphib24/Portfolio-El-Numero-Dose#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
