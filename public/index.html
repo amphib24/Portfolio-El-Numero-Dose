@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <title>Blanchard</title>
+    <link rel="stylesheet" herf="public/styles/base.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/lightbox.css">
     <link rel="stylesheet" href="styles/reset.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-
-  </head>
   <body>
 <header>
 <div class="container">
@@ -24,33 +25,40 @@
 </header>
 <section class="tagline">
   <div class="container">
-    <h2>My Projects</h2>
+    <h2>Check Out My Work!</h2>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <h1 id="heading">Projects</h1>
+    <h1 id="heading">Home</h1>
     <ul id="gallery">
-      <li><a href="#"><img src="images/busmallpicc.png"></a></li>
-      <li><a href="#"><img src="images/cookiespic.png"></a></li>
-      <li><a href="#"><img src="images/storypic.png"></a></li>
+      <li data-title="Busmall" data-desc="This project was quite a challenge."><a href="images/busmallpicc.png" data-lightbox="slider"><img src="images/busmallpicc.png"></a></li>
+      <li data-title="Salmon Cookies" data-desc="This was the hardest project of 201"><a href="images/cookiespic.png" data-lightbox="slider"><img src="images/cookiespic.png"></a></li>
+      <li data-title="Storybook" data-desc="This was the final project of 201"><a href="images/storypic.png" data-lightbox="slider"><img src="images/storypic.png"></a></li>
+      <li data-title="About Me" data-desc="This was my first project. I really just took time to get comfortable with some css. The information in it was mainly for fun."><a href="images/aboutmepic.png" data-lightbox="slider" ><img src="images/aboutmepic.png"></a></li>
     </ul>
   </div>
 </section>
-<header>
-  <h2 class="container">About</h2>
-</header>
-<section class="container">
+
+<section id="Bio">
+  <header>
+    <h2 class="container">Bio</h2>
+  </header>
+  <div class='container'>
   <img id="selfie" src="images/usmcselfie2.jpg"></img>
   <div id="biotext">
     <p>Bio</p>
-  </div>
+</div>
+</div>
 </section>
 
 <footer>
    <p> copyright &copy; 2017 all rights reserved<p>
 </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script src="scripts/constructor.js"></script>
+  <script src="scripts/lightbox.js"></script>
+    </head>
   </body>
 </html>

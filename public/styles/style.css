@@ -6,6 +6,8 @@ body{
 a{
   text-decoration: none;
 }
+h2{ text-align: center;
+}
 .container{
   width: 80%;
   margin: auto;
@@ -18,11 +20,11 @@ header{
 header a {
   color: #000000;
 }
-.title{
+/*.title{
   float: left;
   width: 30%;
   margin-top: 15px;
-}
+}*/
 nav{
   float: right;
   width: 70%;
@@ -38,7 +40,7 @@ nav li{
 nav a{
   padding-bottom: 5px;
 }
-nav li.current, nav a:hover{
+nav li.current a, nav a:hover{
   color:#345;
   border-bottom: #345 4px solid;
 }
@@ -81,6 +83,27 @@ footer{
   text-align: center;
   padding-top: 10px;
 }
+.overlay{
+  display: none;
+  background: #03899c no-repeat top center ;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 6px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+.overlay h1{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
 
 #selfie{
   clear:both;
@@ -96,4 +119,28 @@ footer{
   width:60%;
   height:350px;
   border: 4px solid #03899c;
+}
+@media(max-width: 786px){
+  .logo, nav{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  nav ul, nav li{
+    float: none;
+    padding: 0;
+  }
+  nav li{
+    margin-bottom: 15px;
+    }
+    #gallery li {
+      width: 48%;
+      margin-right:8px;
+    }
+  }
+@media (max-width: 568px){
+  #gallery li{
+    width: 100%;
+    margin-right: 0px;
+  }
 }
