@@ -1,0 +1,24 @@
+@media(max-width: 786px){
+  .logo, nav{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  nav ul, nav li{
+    float: none;
+    padding: 0;
+  }
+  nav li{
+    margin-bottom: 15px;
+    }
+    #gallery li {
+      width: 48%;
+      margin-right:8px;
+    }
+  }
+@media (max-width: 568px){
+  #gallery li{
+    width: 100%;
+    margin-right: 0px;
+  }
+}
