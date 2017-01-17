@@ -1,0 +1,23 @@
+body{
+  font-family: "Arial",sans-serif;
+  font-size: 18px;
+  line-height: 2em;
+}
+a{
+  text-decoration: none;
+}
+h2{ text-align: center;
+}
+header{
+  background-color: #237890;
+  min-height: 60px;
+}
+header a {
+  color: #000000;
+}
+footer{
+  background-color: #03899c;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+}
