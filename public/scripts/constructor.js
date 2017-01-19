@@ -17,15 +17,14 @@ $(document).ready(function(){
 
 		// Remove hidden class if 'all-projects' is selected
     if(category === 'home'){
-      $('ul#gallery li:hidden').fadeIn('slow').removeClass('hidden');
+      $('ul#gallery li:hidden').fadeIn(750).removeClass('hidden');
 
     }else {
       $('ul#gallery li').each(function(){
         if(!$(this).hasClass(category)){
-          $(this).hide().addClass('hidden');
-        } else {
-          $(this).fadeIn('slow').removeClass('hidden');
+          $(this).fadeOut(750).addClass('hidden');
         }
+
       });
 
     }
@@ -34,31 +33,29 @@ $(document).ready(function(){
     return false;
   });
   $('ul#gallery li').on('mouseenter', function(){
-    var title = $(this).data('title');
-    var desc = $(this).data('desc');
+    var title = $(this).children().data('title');
+    var desc = $(this).children().data('desc');
 
     if(title === null){
       title = '';
     }
     if(desc === null){
       desc = 'click to enlarge';
-		}
-
+    }
     $(this).append('<div class="overlay"></div>');
 
     var overlay = $(this).children('.overlay');
 
     overlay.html('<h3>' + title + '</h3><p>' + desc + '</p>');
 
-    overlay.fadeIn(400);
+    overlay.fadein(400);
   });
 
-  $('ul#gallery li').on('mouseleave', function(){
-
+  $('ul#galler li').on('mouseleave', function(){
     $(this).append('<div class="overlay"><div>');
 
     var overlay = $(this).children('.overlay');
 
-    overlay.fadeOut(200);
+ overlay.fadeOut(200);
   });
 });
